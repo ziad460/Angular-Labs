@@ -1,0 +1,18 @@
+<div class="Product-Cards">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12" *ngFor= "let post of allPosts">
+                <div style="padding:40px; margin: auto;">
+                    <div class="card" style="width: 18rem; text-align: center;">
+                        <div class="card-body">
+                            <h4 class="card-title">ID : {{post.id}}</h4>
+                            <p>Title : {{post.title}}</p>
+                            <p>body : {{post.body}}</p>
+                            <a class="btn btn-primary" (click) = "goToComment(post)">Comments</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>

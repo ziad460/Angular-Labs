@@ -1,0 +1,15 @@
+<input type="text" [(ngModel)] = "searchedName"> <button (click) = "changeList()">Searach</button>
+<table class="table table-bordered">
+    <tr>
+        <th>Car Name</th>
+        <th>Car Color</th>
+        <th>Car Speed</th>
+        <th>Car Type</th>
+    </tr>
+    <tr *ngFor = "let car of carList">
+        <td>{{car.name}}</td>
+        <td>{{car.color}}</td>
+        <td>{{car.speed}}</td>
+        <td>{{car.type}}</td>
+    </tr>
+</table>

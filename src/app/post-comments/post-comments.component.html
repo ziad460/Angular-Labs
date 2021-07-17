@@ -1,0 +1,7 @@
+<div style="width: 100%; padding: 20px;display: flex; flex-direction: column; text-align: center;">
+    <div style="text-align: center;" *ngFor = "let com of allComments">
+        <h1>On Post : {{com.name}}</h1>
+        <h3>From Email : {{com.email}}</h3>
+        <p>{{com.body}}</p>
+    </div>
+</div>
